@@ -25,8 +25,7 @@ public class WebServiceHandler {
 
 			// Pass JSON File Data to REST Service
 			try {
-				//URL url = new URL("http://" + hostname + ":" + Integer.toString(port) + "/apm/metricFeed");
-				 URL url = new URL("http://localhost:9080/apm/metricFeed");
+				URL url = new URL("http://" + hostname + ":" + Integer.toString(port) + "/apm/metricFeed");
 				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 				connection.setDoOutput(true);
 				connection.setRequestProperty("Content-Type", "application/json");
