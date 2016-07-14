@@ -14,7 +14,7 @@ public class GetPropertiesFile {
 
 		try {
 
-			input = new FileInputStream("redis.properties");
+			input = new FileInputStream("./redis.properties");
 
 			// load the properties file
 			prop.load(input);
